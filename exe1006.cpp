@@ -1,19 +1,20 @@
 #include <stdio.h>
+#define N1 2
+#define N2 3
+#define N3 5
 
 int main (){
-	float a, b, c, n1, n2, n3, mp;
+	double a, b, c,  mp;
 	
 	printf("Digite a nota 1: ");
-	scanf("%f", &a);
+	scanf("%lf", &a);
 	printf("Digite a nota 2: ");
-	scanf("%f", &b);
+	scanf("%lf", &b);
 	printf("Digite a nota 3: ");
-	scanf("%f", &c);
+	scanf("%lf", &c);
 	
-	n1= 2;
-	n2= 3;
-	n3= 5;
+
 	mp = (a * n1 + b * n2 + c * n3)/ 10;
 	
-	printf("MEDIA: %.1f", mp);
+	printf("MEDIA: %.1lf", mp);
 }
