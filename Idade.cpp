@@ -1,23 +1,22 @@
 #include <stdio.h>
  int main(){
- 	int A;
- 	printf("Digite a idade: ");
- 	scanf("%d", &A);
- 	
- 	if (A <= 10)
- 		printf("Crianca");
-	 
-	 	else if(A <= 18)
-	 		printf("Adolescente");
-	 
-	  		else if(A <= 60)
-	 			printf("Adulto");
-	
-	  				else if(A <= 100)
-	 					printf("Idoso");
-	
-	  					else if(A <= 150)
-	 						printf("Zumbi");
-	 
-	 							else printf("Vampiro");
+ 	int idade;
+	printf("Digite a idade: ");
+	scanf("%d", &idade);
+	switch(idade){
+		case 0 ... 10: 
+			printf("crianca\n");
+		break;
+		case 11 ... 18: 
+			printf("adulto\n");
+		break;
+		case 19 ... 60: 
+			printf("idoso\n");
+		break;
+		case 61 ... 100: 
+			printf("zumbi\n");
+		break;
+		default:
+			printf("idade invalida");
+	}
  }
